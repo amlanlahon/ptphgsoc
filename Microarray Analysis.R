@@ -69,7 +69,7 @@ res_new$annotation = array_annot[match(rownames(res_new), array_annot$ID),10]
 res_new$description = array_annot[match(rownames(res_new), array_annot$ID),2]
 write.csv(res_new, "result__with annotation_logFC1.csv")
 
-#Threshold (p value > 0.01 & |logFC| > 1)
+#Threshold (p value < 0.01 & |logFC| > 1)
 
 res_new$threshold = as.logical[(res_new$adj.P.Val < 0.01) & (abs(res_new$logFC)>1)]
 degs_2fc =  res_new[which(res_new$threshold),]
