@@ -26,7 +26,7 @@ make.cdf.package("GPL10379_HuRSTA-2a520709_custom_MMPM.cdf",
 
 dir(pkgpath)
 
-# USE TERMINAL to run :- sudo R CMD INSTALL C:\Users\CHOCOB~1\AppData\Local\Temp\RtmpY9MkiL/hursta2a520709cdf
+# USE TERMINAL to run :- R CMD INSTALL C:\Users\CHOCOB~1\AppData\Local\Temp\RtmpY9MkiL/hursta2a520709cdf
 
 #RMA
 ovar.data <- ReadAffy()
