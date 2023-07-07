@@ -13,7 +13,7 @@ max(ptp_norm.scaled)
 min(ptp_norm.scaled)
 write.csv(ptp_norm.scaled, "ptp_normalized.csv")
 
-ptp_norm_file = read.csv("ptp_normalized - Copy.csv", row.names = 1)
+ptp_norm_file = read.csv("ptp_normalized.csv", row.names = 1)
 ptp_mat_norm = as.matrix(ptp_norm_file)
 f4 = colorRamp2(seq(min(ptp_norm.scaled), max(ptp_norm.scaled),length = 3), c("blue", "white", "red"), space = "LAB")
 Heatmap(ptp_mat_norm, 
