@@ -1,4 +1,4 @@
-library(scales)0000000000
+library(scales)
 
 vol_data_logFC1 = read.csv("volcano_data_logFC1.csv")
 
